@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLEConnectivityBG" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B8-ry-AXv">
+                                <rect key="frame" x="166.5" y="62" width="41" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NbX-4y-6q1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singal strength" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-dS-QLb">
+                                <rect key="frame" x="110.5" y="101" width="154" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgO-li-rDh">
+                                <rect key="frame" x="157" y="164.5" width="61.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Al-WN-Qpn">
+                                <rect key="frame" x="100.5" y="194" width="174" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-a7-9my">
+                                <rect key="frame" x="177.5" y="358.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6QF-dw-djb"/>
+                                    <constraint firstAttribute="width" constant="20" id="wpZ-tm-YZM"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.50980392159999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fso-XY-tVx">
+                                <rect key="frame" x="16" y="590" width="159.5" height="50"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.50980392159999999" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Db-5x-O1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="Start Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-gB-U40">
+                                <rect key="frame" x="195.5" y="590" width="159.5" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50980392159999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="Stop Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startScanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DlK-88-AnJ"/>
+                                    <action selector="stopScanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xh0-Nj-om9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0x-WB-W0P">
+                                <rect key="frame" x="147" y="238" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HJP-4P-4UP"/>
+                                    <constraint firstAttribute="width" constant="80" id="tS6-RE-Ra2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AfD-dS-QLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1M3-6R-aS0"/>
+                            <constraint firstItem="fso-XY-tVx" firstAttribute="centerY" secondItem="dG3-gB-U40" secondAttribute="centerY" id="7L4-94-vbV"/>
+                            <constraint firstItem="dG3-gB-U40" firstAttribute="height" secondItem="fso-XY-tVx" secondAttribute="height" id="CkU-xP-kUg"/>
+                            <constraint firstItem="2B8-ry-AXv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="IiT-be-Y79"/>
+                            <constraint firstItem="AfD-dS-QLb" firstAttribute="top" secondItem="2B8-ry-AXv" secondAttribute="bottom" constant="18" id="JOO-TP-k3M"/>
+                            <constraint firstItem="dG3-gB-U40" firstAttribute="leading" secondItem="fso-XY-tVx" secondAttribute="trailing" constant="20" id="LJq-oV-8lL"/>
+                            <constraint firstItem="fso-XY-tVx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="MpF-oR-QIC"/>
+                            <constraint firstItem="1Al-WN-Qpn" firstAttribute="top" secondItem="GgO-li-rDh" secondAttribute="bottom" constant="9.5" id="RFm-lb-wDl"/>
+                            <constraint firstAttribute="trailing" secondItem="dG3-gB-U40" secondAttribute="trailing" constant="20" id="Ssi-b7-2rc"/>
+                            <constraint firstItem="m4n-a7-9my" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VJK-Xi-dS2"/>
+                            <constraint firstItem="2B8-ry-AXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOO-Ya-H31"/>
+                            <constraint firstItem="GgO-li-rDh" firstAttribute="top" secondItem="AfD-dS-QLb" secondAttribute="bottom" constant="43.5" id="ZZf-ph-EEF"/>
+                            <constraint firstItem="dG3-gB-U40" firstAttribute="width" secondItem="fso-XY-tVx" secondAttribute="width" id="bUe-g4-f1j"/>
+                            <constraint firstItem="O0x-WB-W0P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxd-wG-0bb"/>
+                            <constraint firstItem="GgO-li-rDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f5G-gQ-avi"/>
+                            <constraint firstItem="m4n-a7-9my" firstAttribute="top" secondItem="O0x-WB-W0P" secondAttribute="bottom" constant="40.5" id="hMX-K9-h58"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fso-XY-tVx" secondAttribute="bottom" constant="27" id="kD6-cm-j0a"/>
+                            <constraint firstItem="1Al-WN-Qpn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kW0-pw-fQj"/>
+                            <constraint firstItem="O0x-WB-W0P" firstAttribute="top" secondItem="1Al-WN-Qpn" secondAttribute="bottom" constant="24" id="lJF-e0-eiP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="m4n-a7-9my" id="0Vw-to-g9U"/>
+                        <outlet property="connectionStatusView" destination="O0x-WB-W0P" id="qan-66-b53"/>
+                        <outlet property="rssiLabel" destination="AfD-dS-QLb" id="S8W-nX-xLm"/>
+                        <outlet property="statusLabel" destination="1Al-WN-Qpn" id="S2K-Vm-TKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
