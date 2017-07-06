@@ -17,5 +17,5 @@ import Foundation
 struct Device{
     static let peripheralDevice = "00001760-CAFE-FACE-1700-556F41535653"
     static let peipheralChar = "00001760-CAFE-FACE-1700-556F41535653"
-    static let B_NAME = "VSM1-DFF4-D60E-4110"
+    static let B_NAME = "DFF4-D60E"
 }
