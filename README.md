@@ -15,9 +15,10 @@ iOS 10.0 and later
 
 
 ## Screenshots
-/Users/prajwallobo/Downloads/BLE/IMG_1462.jpg
-/Users/prajwallobo/Downloads/BLE/IMG_1464.jpg
-/Users/prajwallobo/Downloads/BLE/IMG_1465.jpg
+![ScreenShot](/Screenshots/IMG_1462.jpg)
+![ScreenShot](/Screenshots/IMG_1464.jpg)
+![ScreenShot](/Screenshots/IMG_1465.jpg)
+
 ## UserNotifications
 
 Local notification when scan started, connected to peripheral device, disconnected/connected in background.
